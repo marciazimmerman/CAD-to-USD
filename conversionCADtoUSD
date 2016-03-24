@@ -1,0 +1,8 @@
+var CADCoursePackCost;
+var convertCADToUSD = function (CADCoursePackCost)
+  {
+  var USACoursePackCost = (CADCoursePackCost * 0.7511);
+  console.log ("The course pack that costs " + CADCoursePackCost + "Canadian dollars costs " + USACoursePackCost + "United States dollars.");
+  };
+
+convertCADToUSD (42.50);
