@@ -1,0 +1,10 @@
+var CADCoursePackCost;
+var convertCADToUSD = function (CADCoursePackCost)
+  {
+  //first let's do the conversion
+  var rawUSACoursePackCost = (CADCoursePackCost * 0.7511);
+  //now let's round the converted price to the nearest dollars.cents
+  var USACoursePackCost = Math.round (rawUSACoursePackCost * 100) / 100;
+    alert ("The course pack that costs " + CADCoursePackCost + " CAD costs " + USACoursePackCost + " USD.");
+  };
+convertCADToUSD (42.50);
