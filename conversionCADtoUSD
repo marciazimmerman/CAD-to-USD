@@ -8,3 +8,5 @@ var convertCADToUSD = function (CADCoursePackCost)
     alert ("The course pack that costs " + CADCoursePackCost + " CAD costs " + USACoursePackCost + " USD.");
   };
 convertCADToUSD (42.50);
+
+//next step: figure out a way to prompt the user for the price, then pass that into the function.
