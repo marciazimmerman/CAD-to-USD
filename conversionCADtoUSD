@@ -3,6 +3,7 @@ var convertCADToUSD = function (CADCoursePackCost)
   {
   var USACoursePackCost = (CADCoursePackCost * 0.7511);
   var roundedUSACoursePackCost = Math.round (USACoursePackCost);
-    alert ("The course pack that costs " + CADCoursePackCost + " Canadian dollars costs " + USACoursePackCost + " United States dollars, rounded to " + roundedUSACoursePackCost + " United States dollars.");
-
+  var currencyUSACoursePackCost = Math.round (USACoursePackCost * 100) / 100;
+      alert ("The course pack that costs " + CADCoursePackCost + " CAD costs " + USACoursePackCost + " USD, rounded to "
+      + roundedUSACoursePackCost + " USD, or exactly " + currencyUSACoursePackCost + ".");
 convertCADToUSD (42.50);
